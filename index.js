@@ -1,7 +1,7 @@
 var express = require('express')
 var app = express()
 
-app.set('port', (process.env.PORT || 80))
+app.set('port', (80))
 
 app.get('/', function (request, response) {
     response.send('Hello World!')
