@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: my-app-container
-          image: docker.io/blakefernandes/argocd-app-test:latest
+          image: docker.io/blakefernandes/argocd-app-test:1.1
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8000
