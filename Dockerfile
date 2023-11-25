@@ -11,10 +11,10 @@ COPY package*.json ./
 RUN npm install
 
 # Step 5: Copy the application code
-COPY . ./
+COPY ./dist ./dist
 
 # Step 6: Expose port 80
-EXPOSE 80
+EXPOSE 3000
 
 # Step 7: Define the command to run the application
-CMD [ "node", "index.js" ]
+CMD [ "npm", "run", "start:prod" ]
