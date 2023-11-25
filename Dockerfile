@@ -13,7 +13,7 @@ RUN npm install
 # Step 5: Copy the application code
 COPY . ./
 
-# Step 6: Expose port 8000
+# Step 6: Expose port 80
 EXPOSE 80
 
 # Step 7: Define the command to run the application
